@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <include layout="@layout/layout_toolbar_details"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:context=".View.ChitietActivity">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/slider_detailsPage"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarDetails"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignTop="@+id/slider_detailsPage"
+                app:layout_constraintBottom_toBottomOf="@+id/slider_detailsPage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/slider_detailsPage"
+                android:layout_marginTop="-35dp"
+                android:background="@drawable/layout_bg_details"
+                app:layout_constraintTop_toBottomOf="@+id/toolbarDetails">
+
+                <RadioGroup
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/radioGroupDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="20dp">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/rb_CachNau"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_flat_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="15dp"
+                        android:text="Cách nấu"
+                        android:textColor="@color/radio_flat_text_selector"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_TuongTu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_flat_selector"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="15dp"
+                        android:text="Tương tự"
+                        android:textColor="@color/radio_flat_text_selector"
+                        android:textSize="23sp" />
+
+                </RadioGroup>
+
+                <View
+                    android:id="@+id/vieww"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroupDetails"
+                    tools:layout_editor_absoluteX="20dp" />
+
+                <FrameLayout
+                    android:id="@+id/fragment_Home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vieww"
+                    tools:layout_editor_absoluteX="20dp">
+
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkBox_GioHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+       android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_hinhanh"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/banhchung"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_name"
+                    android:text="bánh chưng sdfsfssfassadfsafsdf   "
+                    android:textSize="20sp"
+                    android:fontFamily="@font/alata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/tv_price"
+                       android:layout_alignParentBottom="true"
+                       android:text="115000"
+                       android:textSize="20sp"
+                       android:textColor="#d63031"
+                       android:fontFamily="@font/alata"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   <TextView
+                       android:text="đ"
+                       android:textStyle="bold"
+                       android:textSize="20sp"
+                       android:textColor="#d63031"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:id="@+id/index_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                   android:layout_weight="2"
+                    android:fontFamily="@font/alata"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                     android:id="@+id/img_xoasanpham"
+                    android:layout_gravity="top"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_close_24"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

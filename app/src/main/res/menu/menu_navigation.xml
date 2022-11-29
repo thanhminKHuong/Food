@@ -1,0 +1,34 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/page_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="#fdcb6e"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
+    <item
+        tools:ignore="MenuTitle"
+        android:id="@+id/page_faroute"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:iconTint="#fdcb6e"
+        android:icon="@drawable/ic_baseline_favorite_24" />
+    <item
+        tools:ignore="MenuTitle"
+        android:id="@+id/page_cartBuy"
+        android:enabled="true"
+        android:iconTint="#fdcb6e"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+       />
+    <item
+        tools:ignore="MenuTitle"
+        android:id="@+id/page_account"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:iconTint="#fdcb6e"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+       />
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/alata</item>
+        <item>@font/aldrich</item>
+        <item>@font/aleo_light</item>
+        <item>@font/allerta</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/andada</item>
+        <item>@font/bai_jamjuree_extralight</item>
+        <item>@font/baloo_bhai</item>
+        <item>@font/baumans</item>
+    </array>
+</resources>

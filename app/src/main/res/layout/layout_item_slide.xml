@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:layout_height="200dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/my_featured_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/itemslide1"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/my_caption_title"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/aclonica"
+            android:text="BREAKFAST GOOD DEALS"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/my_featured_image"
+            app:layout_constraintHorizontal_bias="0.108"
+            app:layout_constraintStart_toStartOf="@+id/my_featured_image"
+            app:layout_constraintTop_toTopOf="@+id/my_featured_image"
+            app:layout_constraintVertical_bias="0.369"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/my_description_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andada"
+            android:text="Discount up to 60%"
+            android:textColor="#99ff99"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/my_featured_image"
+            app:layout_constraintEnd_toEndOf="@+id/my_featured_image"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="@+id/my_featured_image"
+            app:layout_constraintTop_toBottomOf="@+id/my_caption_title"
+            app:layout_constraintVertical_bias="0.232" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

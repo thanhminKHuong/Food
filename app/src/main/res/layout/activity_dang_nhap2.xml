@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/color_header_dangnhap"
+    tools:context=".View.DangKyActivity">
+
+    <TextView
+        android:id="@+id/tv_Dangnhap"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:maxLines="1"
+        android:textColor="#2d3436"
+        android:textSize="50sp"
+        android:text="Đăng nhập" />
+
+    <LinearLayout
+        android:background="@drawable/bg_dangnhap"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_Dangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/ed_emailDangNhap"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:background="@drawable/custom_bg_ed"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="8dp"
+            android:padding="15dp"
+            android:fontFamily="@font/alata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/ed_matKhauDangNhap"
+            android:layout_marginTop="15dp"
+            android:hint="Mật khẩu"
+            android:textSize="20sp"
+            android:background="@drawable/custom_bg_ed"
+            android:drawableLeft="@drawable/icons8lock24"
+            android:drawablePadding="8dp"
+            android:padding="15dp"
+            android:fontFamily="@font/alata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+
+            android:textAllCaps="false"
+            android:id="@+id/btnDangNhap"
+            android:text="Đăng nhập"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
